@@ -1695,3 +1695,74 @@ nav ul{
 #projects .youtube-area{
     margin-bottom:0;
 }
+
+/* =========================
+   MOBILE PROJECT FIX
+========================= */
+
+@media(max-width:900px){
+
+#projects .projects-card{
+    height:auto;
+    overflow:visible;
+}
+
+
+.projects-gallery{
+    min-height:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+.foto-project-1,
+.foto-project-2,
+.foto-project-3,
+.foto-project-4,
+.foto-project-5,
+.foto-project-6,
+.foto-project-7,
+.foto-project-8,
+.foto-project-9,
+.foto-project-10,
+.foto-project-11,
+.foto-project-12,
+.foto-project-13,
+.foto-project-14,
+.foto-project-15,
+.foto-project-16,
+.foto-project-17,
+.foto-project-18,
+.foto-project-19,
+.foto-project-20{
+
+    width:100%;
+    max-width:320px;
+
+    position:relative;
+
+    left:0;
+    top:0;
+
+    margin:auto;
+
+}
+
+
+.thesis-info{
+
+    left:0;
+    top:0;
+
+}
+
+
+.youtube-area{
+
+    left:0;
+    top:0;
+
+}
+
+}
