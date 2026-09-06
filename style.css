@@ -919,7 +919,7 @@ nav ul{
 /* =========================
    PROJECT FOTO CONTROL
 ========================= */
-
+@media(min-width:901px){
 .foto-project-1{
 
     width:260px;
@@ -1138,6 +1138,8 @@ nav ul{
     position:relative;
     left:-400px;
     top:-5293px;
+}
+
 }
 
 /* =========================
