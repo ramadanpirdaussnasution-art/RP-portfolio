@@ -1295,9 +1295,13 @@ nav ul{
 
 }
 
+@media(min-width:901px){
+
 #projects .projects-gallery{
 
     margin-bottom:-5000px;
+
+}
 
 }
 
@@ -1780,6 +1784,111 @@ nav ul{
     position:static !important;
 
     margin:20px auto !important;
+
+}
+
+
+}
+
+/* =========================
+   FINAL PROJECT MOBILE CLEAN
+========================= */
+
+@media(max-width:900px){
+
+
+#projects .projects-card{
+
+    height:auto !important;
+    min-height:0 !important;
+    padding:25px !important;
+
+}
+
+
+#projects .projects-info{
+
+    width:100% !important;
+    text-align:center !important;
+
+}
+
+
+#projects .projects-info h3{
+
+    font-size:28px;
+    margin-bottom:20px;
+
+}
+
+
+#projects .projects-info p{
+
+    width:100% !important;
+    font-size:16px;
+    line-height:1.6;
+
+}
+
+
+#projects .projects-gallery{
+
+    margin-top:30px !important;
+    margin-bottom:0 !important;
+
+    min-height:0 !important;
+
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+
+}
+
+
+#projects .project-photo{
+
+    display:flex !important;
+    flex-direction:column !important;
+
+}
+
+
+#projects img[class*="foto-project"]{
+
+    position:static !important;
+
+    left:auto !important;
+    top:auto !important;
+
+    width:90% !important;
+    max-width:320px !important;
+
+    margin:15px auto !important;
+
+}
+
+
+.thesis-info{
+
+    position:static !important;
+
+    margin:30px 0 !important;
+
+}
+
+
+.youtube-area{
+
+    position:static !important;
+
+    margin:20px auto !important;
+
+}
+
+
+.youtube-button{
+
+    width:180px !important;
 
 }
 
