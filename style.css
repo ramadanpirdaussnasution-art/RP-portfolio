@@ -2033,3 +2033,25 @@ nav ul{
 
 }
 
+/* =========================
+   HERO LINE MOBILE FIX
+========================= */
+
+@media(max-width:900px){
+
+.hero::before,
+.hero::after{
+
+    display:none !important;
+
+}
+
+
+.hero .line,
+.hero .hero-line{
+
+    display:none !important;
+
+}
+
+}
