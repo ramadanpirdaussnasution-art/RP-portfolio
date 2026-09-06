@@ -1,0 +1,1697 @@
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#071226;
+    color:white;
+    overflow-x:hidden;
+
+}
+
+.container{
+
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:0 30px;
+
+}
+
+/* =========================
+   BACKGROUND GRID
+========================= */
+
+.background-grid{
+
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image:
+    linear-gradient(
+        rgba(56,189,248,0.05) 1px,
+        transparent 1px
+    ),
+
+    linear-gradient(
+        90deg,
+        rgba(56,189,248,0.05) 1px,
+        transparent 1px
+    );
+
+    background-size:50px 50px;
+    z-index:-2;
+
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+header{
+
+    padding:25px 0;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:
+    rgba(7,18,38,0.85);
+    backdrop-filter:blur(10px);
+}
+
+nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+
+    font-size:22px;
+    font-weight:bold;
+    letter-spacing:1px;
+    color:#38bdf8;
+}
+
+nav ul{
+
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#38bdf8;
+
+}
+
+/* =========================
+   HOME
+========================= */
+
+.hero{
+
+    min-height:65vh;
+    padding-top:80px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:80px;
+
+}
+
+.hero-text h1{
+
+    font-size:64px;
+    line-height:1.1;
+    letter-spacing:-2px;
+
+}
+
+.button-area{
+
+    margin-top:35px;
+    display:flex;
+    gap:15px;
+
+}
+
+button{
+
+    padding:14px 32px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#38bdf8;
+    transform:translateY(-3px);
+
+}
+
+.linkedin{
+
+    background:#0a66c2;
+
+}
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile-area{
+
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transform:translateY(40px);
+
+}
+
+.profile-box{
+
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    padding:8px;
+    border:3px solid #2563eb;
+    box-shadow:0 0 30px #2563eb;
+    z-index:2;
+
+}
+
+.profile-box img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center 15%;
+    border-radius:50%;
+
+}
+
+.glow-circle{
+
+    position:absolute;
+    width:360px;
+    min-height:300px;
+    background:#2563eb;
+    filter:blur(100px);
+    opacity:.25;
+
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro{
+
+    text-align:center;
+    margin-top:30px;
+    padding:40px 30px 120px;
+
+}
+
+.intro p{
+
+    max-width:850px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.7;
+    color:#cbd5e1;
+
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+
+    padding-top:100px;
+    padding-bottom:100px;
+
+}
+
+.about-title{
+
+    text-align:center;
+    margin-bottom:40px;
+
+}
+
+.about-title h2{
+
+    font-size:42px;
+    color:#38bdf8;
+
+}
+
+.about-content{
+
+    max-width:900px;
+    margin:auto;
+    background:
+    rgba(15,23,42,.7);
+    border:1px solid rgba(56,189,248,.3);
+    padding:40px;
+    border-radius:20px;
+
+    box-shadow:
+    0 0 30px rgba(37,99,235,.15);
+
+}
+
+.about-content p{
+
+    font-size:18px;
+    line-height:1.8;
+    color:#cbd5e1;
+    margin-bottom:20px;
+
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience{
+
+    padding-top:100px;
+    padding-bottom:100px;
+
+}
+
+.experience-title{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.experience-title h2{
+
+    font-size:45px;
+    color:#38bdf8;
+
+}
+
+.experience-card{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+
+    background:
+    rgba(15,23,42,0.65);
+
+    border:
+    1px solid rgba(56,189,248,0.3);
+
+    border-radius:25px;
+    padding:40px;
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+    0 0 30px rgba(37,99,235,0.15);
+}
+
+/* =========================
+   EXPERIENCE TEXT
+========================= */
+
+.experience-date{
+
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:20px;
+    background:#2563eb;
+    color:white;
+    font-size:14px;
+    margin-bottom:20px;
+
+}
+
+.experience-info h3{
+
+    font-size:32px;
+    color:white;
+    margin-bottom:10px;
+
+}
+
+.experience-info h4{
+
+    color:#38bdf8;
+    font-size:20px;
+    margin-bottom:20px;
+
+}
+
+.experience-info p{
+
+    color:#cbd5e1;
+    line-height:1.8;
+    font-size:17px;
+
+}
+
+.experience-info ul{
+
+    margin-top:20px;
+    padding-left:20px;
+
+}
+
+.experience-info li{
+
+    color:#cbd5e1;
+    margin-bottom:12px;
+    line-height:1.6;
+
+}
+
+/* =========================
+   EXPERIENCE PHOTO AREA
+========================= */
+
+.experience-gallery{
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    align-items:center;
+    justify-content:flex-start;
+
+}
+
+.experience-photo{
+
+    width:100%;
+    height:auto;
+    background:transparent;
+    overflow:visible;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+/* =========================
+   PHOTO CONTROL UM
+========================= */
+
+/* FOTO PANEL */
+
+.foto-panel{
+
+    width:230px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    transform:
+    translateX(-130px)
+    translateY(0px);
+
+}
+
+/* FOTO INSTALLATION */
+
+.foto-installation{
+
+    width:250px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    object-fit:contain;
+    transform:
+    translateX(130px)
+    translateY(-295px);
+
+    margin-bottom:-320px;
+}
+
+/* FOTO Maintenance */
+
+.foto-maintenance{
+
+    width:230px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:-130px;      /* kiri kanan */
+    top:-250px;       /* naik turun */
+
+    margin-bottom:-270px;
+
+}
+
+/* =========================
+   PLTA FOTO POSITION CONTROL
+========================= */
+
+/* FOTO 1 MOTOR */
+
+.foto-plta-1{
+
+    width:220px;
+    height:auto;
+    display:block;
+    position:relative;
+    left:-120px;
+    top:0px;
+
+    border-radius:20px;
+}
+
+/* FOTO 2 CRANE */
+
+.foto-plta-2{
+
+    width:260px;
+    height:auto;
+    display:block;
+    position:relative;
+    left:-135px;
+    top:0px;
+    border-radius:20px;
+
+}
+
+/* FOTO 3 PLC */
+
+.foto-plta-3{
+
+    width:260px;
+    height:auto;
+    display:block;
+    position:relative;
+    left:135px;
+    top:-275px;
+
+    border-radius:20px;
+}
+
+/* FOTO 4 CLEANING */
+
+.foto-plta-4{
+
+    width:260px;
+    height:auto;
+    display:block;
+    position:relative;
+    left:-135px;
+    top:-275px;
+
+    border-radius:20px;
+}
+
+/* FOTO 5 OVERHAUL */
+
+.foto-plta-5{
+
+    width:260px;
+    height:auto;
+    display:block;
+    position:relative;
+    left:135px;
+    top:-550px;
+
+    border-radius:20px;
+}
+
+/* FOTO 6 INSPECTION */
+
+.foto-plta-6{
+
+    width:260px;
+    height:auto;
+    display:block;
+    position:relative;
+    left:-405px;
+    top:-825px;
+
+    border-radius:20px;
+}
+
+/* FOTO 7 PANEL */
+
+.foto-plta-7{
+
+    width:220px;
+    height:auto;
+    display:block;
+    position:relative;
+    left:130px;
+    top:-1778px;
+
+    border-radius:20px;
+}
+
+/* FOTO 8 CONTROL PANEL */
+
+.foto-plta-8{
+
+    width:260px;
+    height:auto;
+    display:block;
+    position:relative;
+    left:-675px;
+    top:-1508px;
+
+    border-radius:20px;
+}
+
+#plta .experience-card{
+
+    padding-bottom:0px;
+
+}
+
+#plta .experience-gallery{
+
+    margin-bottom:-1500px;
+}
+
+/* =========================
+   KARYA CIPTA NEONUSA
+========================= */
+
+.foto-kcn-1{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:-150px;
+    top:0px;
+
+}
+
+.foto-kcn-ai{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    cursor:pointer;
+    position:relative;
+    left:230px;
+    top:-515px;
+
+    margin-bottom:-480px;
+}
+
+.foto-kcn-ai:hover{
+
+    transform:scale(1.05);
+}
+
+.ai-hint{
+
+    margin-top:15px;
+    text-align:center;
+    color:#38bdf8;
+    font-size:14px;
+    line-height:1.5;
+}
+
+.ai-hint span{
+
+    color:#cbd5e1;
+    font-size:12px;
+}
+
+/* =========================
+   ROBOEDU
+========================= */
+
+.foto-roboedu-1{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:-150px;
+    top:20px;
+}
+
+.foto-roboedu-2{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:130px;
+    top:-240px;
+}
+
+.foto-roboedu-3{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:-150px;
+    top:-350px;
+}
+
+.foto-roboedu-4{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:-150px;
+    top:-360px;
+}
+
+.foto-roboedu-5{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:130px;
+    top:-670px;
+}
+
+#roboedu .experience-gallery{
+
+    margin-bottom:-700px;
+}
+
+/* =========================
+   PROJECTS SECTION
+========================= */
+
+.projects{
+
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+.projects-title{
+
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.projects-title h2{
+
+    font-size:45px;
+    color:#38bdf8;
+}
+
+.projects-card{
+
+    background:rgba(15,23,42,0.65);
+    border:1px solid rgba(56,189,248,0.3);
+    border-radius:25px;
+    padding:50px;
+    backdrop-filter:blur(10px);
+    box-shadow:
+    0 0 30px rgba(37,99,235,0.15);
+}
+
+/* =========================
+   PROJECT DESCRIPTION
+========================= */
+
+.projects-info{
+
+    width:100%;
+    max-width:none;
+}
+
+.projects-info h3{
+
+    font-size:36px;
+    color:#38bdf8;
+    margin-bottom:25px;
+}
+
+.projects-info p{
+
+    width:100%;
+    max-width:none;
+    color:#cbd5e1;
+    font-size:18px;
+    line-height:1.9;
+}
+
+/* =========================
+   PROJECT PHOTO AREA
+========================= */
+
+.projects-gallery{
+
+    margin-top:60px;
+    position:relative;
+    min-height:900px;
+}
+
+.project-photo{
+
+    width:100%;
+    height:auto;
+    background:transparent;
+    overflow:visible;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.project-photo img{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+}
+
+/* =========================
+   PROJECT FOTO CONTROL
+      (ATUR MANUAL)
+========================= */
+
+/* =========================
+   CIRCUIT DECORATION
+========================= */
+
+.circuit{
+
+    position:absolute;
+    border:2px solid rgba(56,189,248,.3);
+}
+
+.circuit-one{
+
+    width:200px;
+    height:200px;
+    right:100px;
+    top:150px;
+    border-left:none;
+    border-bottom:none;
+}
+
+.circuit-two{
+
+    width:150px;
+    height:150px;
+    left:100px;
+    bottom:120px;
+    border-right:none;
+    border-top:none;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+.hero{
+
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.hero-text h1{
+
+    font-size:45px;
+}
+
+.profile-box{
+
+    width:260px;
+    height:260px;
+}
+
+nav ul{
+
+    display:none;
+}
+
+.button-area{
+
+    justify-content:center;
+}
+
+.experience-card{
+
+    grid-template-columns:1fr;
+}
+
+.experience-title h2{
+
+    font-size:35px;
+}
+
+.experience-info h3{
+
+    font-size:28px;
+}
+
+.foto-panel{
+
+    width:240px;
+    transform:none;
+}
+
+.foto-installation{
+
+    width:260px;
+    transform:none;
+}
+
+.projects-title h2{
+
+    font-size:35px;
+}
+
+.projects-card{
+
+    padding:30px;
+}
+
+.projects-info h3{
+
+    font-size:28px;
+}
+
+.projects-info p{
+
+    font-size:16px;
+}
+
+}
+
+.projects-info p{
+
+    width:100%;
+    max-width:none;
+    color:#cbd5e1;
+    font-size:18px;
+    line-height:1.9;
+    margin-bottom:25px;
+}
+
+/* =========================
+   PROJECT FOTO CONTROL
+========================= */
+
+.foto-project-1{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:-400px;
+    top:-50px;
+}
+
+.foto-project-2{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:-135px;
+    top:-395px;
+}
+
+.foto-project-3{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:130px;
+    top:-740px;
+}
+
+.foto-project-4{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:395px;
+    top:-1085px;
+}
+
+.foto-project-5{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:-400px;
+    top:-1085px;
+}
+
+.foto-project-6{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:-135px;
+    top:-1430px;
+}
+
+.foto-project-7{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:130px;
+    top:-1775px;
+}
+
+.foto-project-8{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:395px;
+    top:-2120px;
+}
+
+.foto-project-9{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:-400px;
+    top:-2120px;
+}
+
+.foto-project-10{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:-135px;
+    top:-2465px;
+}
+
+.foto-project-11{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:130px;
+    top:-2810px;
+}
+
+.foto-project-12{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:395px;
+    top:-3155px;
+}
+
+.foto-project-13{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:-400px;
+    top:-3155px;
+}
+
+.foto-project-14{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:-135px;
+    top:-3500px;
+}
+
+.foto-project-15{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:130px;
+    top:-3848px;
+}
+
+.foto-project-16{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:395px;
+    top:-4192px;
+}
+
+.foto-project-17{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:130px;
+    top:-4190px;
+}
+
+.foto-project-18{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:395px;
+    top:-4538px;
+}
+
+.foto-project-19{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:-135px;
+    top:-4995px;
+}
+
+.foto-project-20{
+
+    width:260px;
+    height:auto;
+    display:block;
+    border-radius:20px;
+    position:relative;
+    left:-400px;
+    top:-5293px;
+}
+
+/* =========================
+   FINAL THESIS INFORMATION
+========================= */
+
+
+.thesis-info{
+
+
+    position:relative;
+
+
+    left:-340px;        /* kontrol teks kiri kanan */
+
+
+    top:-140px;         /* kontrol teks naik turun */
+
+
+    text-align:center;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+.thesis-info h3{
+
+
+    color:#38bdf8;
+
+
+    font-size:32px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.thesis-info p{
+
+
+    color:#cbd5e1;
+
+
+    font-size:18px;
+
+
+    line-height:1.6;
+
+
+}
+
+
+
+
+
+/* =========================
+   YOUTUBE BUTTON AREA
+========================= */
+
+
+.youtube-area{
+
+
+    position:relative;
+
+
+    left:-350px;        /* kontrol tombol kiri kanan */
+
+
+    top:-150px;         /* kontrol tombol naik turun */
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+}
+
+
+
+
+
+
+.youtube-button{
+
+
+    width:180px;
+
+
+    height:65px;
+
+
+    border:none;
+
+
+    border-radius:15px;
+
+
+    background:#2563eb;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    cursor:pointer;
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+
+.youtube-icon{
+
+
+    width:200px;
+
+
+    height:auto;
+
+
+}
+
+
+
+
+.youtube-button:hover{
+
+
+    transform:translateY(-3px);
+
+
+    opacity:0.9;
+
+
+}
+
+#projects .projects-gallery{
+
+    margin-bottom:-5000px;
+
+}
+
+
+.youtube-area{
+
+    margin-bottom:-190px;
+
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+
+.contact{
+
+    padding:80px 0;
+
+    min-height:auto;
+
+}
+
+
+
+.contact-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+
+
+.contact-title h2{
+
+    font-size:45px;
+
+    color:#38bdf8;
+
+}
+
+
+
+
+
+.contact-card{
+
+
+    max-width:900px;
+
+    margin:auto;
+
+
+    background:
+    rgba(15,23,42,0.65);
+
+
+    border:
+    1px solid rgba(56,189,248,0.3);
+
+
+    border-radius:25px;
+
+
+    padding:50px;
+
+
+    box-shadow:
+    0 0 30px rgba(37,99,235,0.15);
+
+
+}
+
+
+
+
+
+.contact-card h3{
+
+
+    text-align:center;
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+.contact-card > p{
+
+
+    text-align:center;
+
+    color:#cbd5e1;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:45px;
+
+
+}
+
+
+
+
+.contact-list{
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+.contact-item{
+
+
+    display:flex;
+
+    align-items:center;
+
+
+    gap:20px;
+
+
+    text-decoration:none;
+
+
+    padding:15px;
+
+
+    border-radius:15px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.contact-item:hover{
+
+
+    background:rgba(56,189,248,0.08);
+
+
+}
+
+
+
+
+
+.contact-item img{
+
+
+    width:55px;
+
+    height:55px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+
+
+
+.contact-item span{
+
+
+    color:#38bdf8;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+
+}
+
+
+
+.contact-item p{
+
+
+    color:#cbd5e1;
+
+    margin-top:5px;
+
+    font-size:16px;
+
+
+}
+
+.contact-item{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    text-decoration:none;
+
+    padding:15px;
+
+
+}
+
+
+.contact-item img{
+
+
+    width:55px;
+
+    height:55px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+/* =========================
+   LANGUAGE SWITCH
+========================= */
+
+
+.language-switch{
+
+    display:flex;
+
+    gap:8px;
+
+    align-items:center;
+
+    margin-left:5px;
+
+}
+
+/* =========================
+   COMPANY LOGO
+========================= */
+
+
+.company-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+}
+
+
+
+.company-logo{
+
+    width:45px;
+
+    height:45px;
+
+    object-fit:contain;
+
+    border-radius:50%;
+
+    position:relative;
+    left:-50px;
+    top:0px;
+
+}
+
+/* =========================
+   PLN LOGO
+========================= */
+
+
+.company-logo-pln{
+
+    width:150px;
+
+    height:50px;
+
+    object-fit:contain;
+
+    border-radius:12px;
+
+    background:white;
+
+    position:relative;
+
+    left:-70px;
+
+    top:-20px;
+
+}
+
+/* =========================
+   ROBOEDU LOGO
+========================= */
+
+
+.company-logo-roboedu{
+
+    width:60px;
+
+    height:60px;
+
+    object-fit:contain;
+
+    border-radius:15px;
+
+    background:white;
+
+    padding:5px;
+
+    position:relative;
+
+    left:-220px;
+
+    top:-3px;
+
+}
+
+/* =========================
+   PROJECT LOGO
+========================= */
+
+
+.project-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+}
+
+
+
+.project-logo{
+
+    width:60px;
+
+    height:60px;
+
+    object-fit:contain;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:8px;
+
+    position:relative;
+
+    left:-600px;
+
+    top:-10px;
+
+}
+#projects{
+    overflow:hidden;
+}
+
+#projects .projects-card{
+    height:2330px;
+    overflow:hidden;
+}
+
+#projects .youtube-area{
+    margin-bottom:0;
+}
