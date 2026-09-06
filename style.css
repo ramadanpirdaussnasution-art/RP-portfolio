@@ -1307,10 +1307,12 @@ nav ul{
 
 }
 
-
+@media(min-width:901px){
 .youtube-area{
 
     margin-bottom:-190px;
+
+}
 
 }
 
@@ -1693,9 +1695,13 @@ nav ul{
     overflow:hidden;
 }
 
+@media(min-width:901px){
+
 #projects .projects-card{
     height:2330px;
     overflow:hidden;
+}
+
 }
 
 #projects .youtube-area{
@@ -1891,6 +1897,49 @@ nav ul{
 .youtube-button{
 
     width:180px !important;
+
+}
+
+
+}
+
+
+
+
+@media(max-width:900px){
+
+#projects .projects-card{
+
+    height:auto !important;
+    min-height:0 !important;
+    overflow:visible !important;
+
+}
+
+
+#projects .projects-gallery{
+
+    position:static !important;
+    min-height:0 !important;
+    height:auto !important;
+
+}
+
+
+#projects .project-photo{
+
+    position:static !important;
+    height:auto !important;
+
+}
+
+
+#projects img[class*="foto-project"]{
+
+    position:static !important;
+    left:auto !important;
+    top:auto !important;
+    margin:20px auto !important;
 
 }
 
