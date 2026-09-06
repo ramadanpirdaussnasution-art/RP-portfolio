@@ -2010,28 +2010,15 @@ nav ul{
 
 @media(max-width:900px){
 
-.circuit-one{
-
-    width:120px !important;
-    height:120px !important;
-
-    right:20px !important;
-    top:120px !important;
-
-}
-
-
+.circuit-one,
 .circuit-two{
 
-    width:100px !important;
-    height:100px !important;
-
-    left:20px !important;
-    bottom:50px !important;
+    display:none !important;
 
 }
 
 }
+
 
 /* =========================
    HERO LINE MOBILE FIX
