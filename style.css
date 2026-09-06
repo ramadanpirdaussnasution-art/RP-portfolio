@@ -1967,6 +1967,69 @@ nav ul{
 
 }
 
+}
+
+@media(max-width:900px){
+
+header{
+
+    padding:15px 0;
+
+}
+
+
+nav{
+
+    overflow:hidden;
+
+}
+
+
+.logo{
+
+    font-size:18px;
+
+}
+
+
+nav ul{
+
+    display:flex !important;
+
+    max-width:200px;
+
+    overflow-x:auto;
+
+}
+
+}
+
+/* =========================
+   CIRCUIT MOBILE FIX
+========================= */
+
+@media(max-width:900px){
+
+.circuit-one{
+
+    width:120px !important;
+    height:120px !important;
+
+    right:20px !important;
+    top:120px !important;
+
+}
+
+
+.circuit-two{
+
+    width:100px !important;
+    height:100px !important;
+
+    left:20px !important;
+    bottom:50px !important;
+
+}
 
 }
 
