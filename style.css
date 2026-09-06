@@ -1851,7 +1851,7 @@ nav ul{
 
 @media(max-width:900px){
 
-#um .experience-gallery{
+#experience .experience-gallery{
 
     position:static !important;
 
@@ -1859,13 +1859,13 @@ nav ul{
     flex-direction:column !important;
     align-items:center !important;
 
-    min-height:0 !important;
     margin-bottom:0 !important;
+    min-height:0 !important;
 
 }
 
 
-#um .experience-photo img[class*="foto-um"]{
+#experience .experience-photo img[class*="foto-"]{
 
     position:static !important;
 
@@ -1886,9 +1886,10 @@ nav ul{
 }
 
 
-#um .experience-card{
+#experience .experience-card{
 
     height:auto !important;
+
     padding:20px !important;
 
 }
