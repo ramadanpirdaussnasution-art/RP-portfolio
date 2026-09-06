@@ -1859,13 +1859,31 @@ nav ul{
     flex-direction:column !important;
     align-items:center !important;
 
-    margin-bottom:0 !important;
+    gap:20px !important;
+
+    margin:0 !important;
+
     min-height:0 !important;
+    height:auto !important;
 
 }
 
 
-#experience .experience-photo img[class*="foto-"]{
+#experience .experience-photo{
+
+    position:static !important;
+
+    width:100% !important;
+    height:auto !important;
+
+    display:flex !important;
+
+    justify-content:center !important;
+
+}
+
+
+#experience .experience-photo img{
 
     position:static !important;
 
@@ -1876,12 +1894,13 @@ nav ul{
 
     transform:none !important;
 
+    margin:0 auto !important;
+
     width:90% !important;
+
     max-width:320px !important;
 
     height:auto !important;
-
-    margin:15px auto !important;
 
 }
 
