@@ -2049,11 +2049,7 @@ nav ul{
 
 @media(max-width:900px){
 
-.hero::before,
-.hero::after,
-.hero .line,
-.hero .hero-line,
-.hero .circuit,
+.circuit,
 .circuit-one,
 .circuit-two{
 
