@@ -2042,3 +2042,23 @@ nav ul{
 }
 
 }
+
+/* =========================
+   REMOVE ALL HERO DECORATION MOBILE
+========================= */
+
+@media(max-width:900px){
+
+.hero::before,
+.hero::after,
+.hero .line,
+.hero .hero-line,
+.hero .circuit,
+.circuit-one,
+.circuit-two{
+
+    display:none !important;
+
+}
+
+}
